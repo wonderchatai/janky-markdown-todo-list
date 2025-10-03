@@ -1,5 +1,7 @@
-- [ ] Build a landing page.
-- [ ] Add support and privacy pages.
-- [ ] Create some demos screenshots.
+- [x] Build a landing page.
+- [x] Add support and privacy pages.
+- [x] Create some demos screenshots.
 - [ ] Create some Reddit posts for gym.
 - [ ] Give it out for free.
+- [ ] Get it review and approve in App Store.
+- [x] Monetize it?
