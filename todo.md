@@ -1,0 +1,5 @@
+- [ ] Build a landing page.
+- [ ] Add support and privacy pages.
+- [ ] Create some demos screenshots.
+- [ ] Create some Reddit posts for gym.
+- [ ] Give it out for free.
