@@ -8,7 +8,7 @@
     <style>
         body { font-family: sans-serif; margin: 20px; }
         pre { white-space: pre-wrap; word-wrap: break-word; background-color: #f4f4f4; padding: 10px; border-radius: 5px; }
-        .prompt, .llm-action, .llm-response, .llm-output { margin-bottom: 15px; border: 1px solid #ddd; padding: 10px; border-radius: 5px;}
+        .prompt, .llm-response { margin-bottom: 15px; border: 1px solid #ddd; padding: 10px; border-radius: 5px;}
         .section-title { margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         footer { margin-top: 50px; font-size: 0.8em; color: #555; }
     </style>
@@ -22,11 +22,6 @@
     <div class="prompt">
         <pre><code class="language-markdown">Create a markdown todo list with checkboxes to indicate completion. 1. Build a landing page. 2. Add support and privacy pages. 3. Create some demos screenshots. 4. Create some Reddit posts for gym. 5. Give it out for free.</code></pre>
     </div>
-
-    <div class="section-title"><h3>LLM Action:</h3></div>
-    <div class="llm-action">
-        <pre><code class="language-python">create_file(filename = "todo.md", content = "- [ ] Build a landing page.\n- [ ] Add support and privacy pages.\n- [ ] Create some demos screenshots.\n- [ ] Create some Reddit posts for gym.\n- [ ] Give it out for free.")</code></pre>
-    </div>
     <div class="section-title"><h3>LLM Response:</h3></div>
     <div class="llm-response">
         <pre><code class="language-markdown">The todo list has been written to `todo.md`.</code></pre>
@@ -35,13 +30,6 @@
     <div class="section-title"><h3>User Prompt:</h3></div>
     <div class="prompt">
         <pre><code class="language-markdown">Push</code></pre>
-    </div>
-
-    <div class="section-title"><h3>LLM Action:</h3></div>
-    <div class="llm-action">
-        <pre><code class="language-python">stage_changes()</code></pre>
-        <pre><code class="language-python">commit_changes(message = "Add todo.md")</code></pre>
-        <pre><code class="language-python">push_changes()</code></pre>
     </div>
     <div class="section-title"><h3>LLM Response:</h3></div>
     <div class="llm-response">
@@ -52,12 +40,6 @@
     <div class="prompt">
         <pre><code class="language-markdown">I need to add more task at the end. Get it review and approve in App Store. Another task, monetize it?</code></pre>
     </div>
-
-    <div class="section-title"><h3>LLM Action:</h3></div>
-    <div class="llm-action">
-        <pre><code class="language-python">read_file(path = "todo.md")</code></pre>
-        <pre><code class="language-python">update_file(filename = "todo.md", content = "- [ ] Build a landing page.\n- [ ] Add support and privacy pages.\n- [ ] Create some demos screenshots.\n- [ ] Create some Reddit posts for gym.\n- [ ] Give it out for free.\n- [ ] Get it review and approve in App Store.\n- [ ] Monetize it?")</code></pre>
-    </div>
     <div class="section-title"><h3>LLM Response:</h3></div>
     <div class="llm-response">
         <pre><code class="language-markdown">I've added the new tasks to `todo.md`.</code></pre>
@@ -66,11 +48,6 @@
     <div class="section-title"><h3>User Prompt:</h3></div>
     <div class="prompt">
         <pre><code class="language-markdown">Show me list</code></pre>
-    </div>
-
-    <div class="section-title"><h3>LLM Action:</h3></div>
-    <div class="llm-action">
-        <pre><code class="language-python">read_file(path = "todo.md")</code></pre>
     </div>
     <div class="section-title"><h3>LLM Response:</h3></div>
     <div class="llm-response">
@@ -87,13 +64,6 @@
     <div class="prompt">
         <pre><code class="language-markdown">1 to 3, and monetize is done</code></pre>
     </div>
-
-    <div class="section-title"><h3>LLM Action:</h3></div>
-    <div class="llm-action">
-        <pre><code class="language-python">read_file(path = "todo.md")</code></pre>
-        <pre><code class="language-python">update_file(filename = "todo.md", content = "- [x] Build a landing page.\n- [x] Add support and privacy pages.\n- [x] Create some demos screenshots.\n- [ ] Create some Reddit posts for gym.\n- [ ] Give it out for free.\n- [ ] Get it review and approve in App Store.\n- [x] Monetize it?")</code></pre>
-        <pre><code class="language-python">read_file(path = "todo.md")</code></pre>
-    </div>
     <div class="section-title"><h3>LLM Response:</h3></div>
     <div class="llm-response">
         <pre><code class="language-markdown">I've updated the todo list to mark tasks 1, 2, 3, and "Monetize it?" as complete.</code></pre>
@@ -102,11 +72,6 @@
     <div class="section-title"><h3>User Prompt:</h3></div>
     <div class="prompt">
         <pre><code class="language-markdown">Show list</code></pre>
-    </div>
-
-    <div class="section-title"><h3>LLM Action:</h3></div>
-    <div class="llm-action">
-        <pre><code class="language-python">read_file(path = "todo.md")</code></pre>
     </div>
     <div class="section-title"><h3>LLM Response:</h3></div>
     <div class="llm-response">
@@ -122,14 +87,6 @@
     <div class="section-title"><h3>User Prompt:</h3></div>
     <div class="prompt">
         <pre><code class="language-markdown">Push</code></pre>
-    </div>
-
-    <div class="section-title"><h3>LLM Action:</h3></div>
-    <div class="llm-action">
-        <pre><code class="language-python">stage_changes()</code></pre>
-        <pre><code class="language-python">commit_changes(message = "Mark tasks 1-3 and monetize as complete in todo.md")</code></pre>
-        <pre><code class="language-python">push_changes()</code></pre>
-        <pre><code class="language-python">publish_website()</code></pre>
     </div>
     <div class="section-title"><h3>LLM Response:</h3></div>
     <div class="llm-response">
