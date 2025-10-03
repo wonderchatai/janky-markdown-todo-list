@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>LLM Instruction Template</title>
+    <title>Managing a Janky Markdown Todo List with Prompts in WonderChat</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-    <h1>LLM Instruction Template Example</h1>
+    <h1>Managing a Janky Markdown Todo List with Prompts in WonderChat</h1>
 
     <h2>Conversation as a Template</h2>
 
@@ -25,11 +25,7 @@
 
     <div class="section-title"><h3>LLM Action:</h3></div>
     <div class="llm-action">
-        <pre><code class="language-python">create_file(filename = "todo.md", content = "- [ ] Build a landing page.
-- [ ] Add support and privacy pages.
-- [ ] Create some demos screenshots.
-- [ ] Create some Reddit posts for gym.
-- [ ] Give it out for free.")</code></pre>
+        <pre><code class="language-python">create_file(filename = "todo.md", content = "- [ ] Build a landing page.\n- [ ] Add support and privacy pages.\n- [ ] Create some demos screenshots.\n- [ ] Create some Reddit posts for gym.\n- [ ] Give it out for free.")</code></pre>
     </div>
     <div class="section-title"><h3>LLM Response:</h3></div>
     <div class="llm-response">
@@ -60,13 +56,7 @@
     <div class="section-title"><h3>LLM Action:</h3></div>
     <div class="llm-action">
         <pre><code class="language-python">read_file(path = "todo.md")</code></pre>
-        <pre><code class="language-python">update_file(filename = "todo.md", content = "- [ ] Build a landing page.
-- [ ] Add support and privacy pages.
-- [ ] Create some demos screenshots.
-- [ ] Create some Reddit posts for gym.
-- [ ] Give it out for free.
-- [ ] Get it review and approve in App Store.
-- [ ] Monetize it?")</code></pre>
+        <pre><code class="language-python">update_file(filename = "todo.md", content = "- [ ] Build a landing page.\n- [ ] Add support and privacy pages.\n- [ ] Create some demos screenshots.\n- [ ] Create some Reddit posts for gym.\n- [ ] Give it out for free.\n- [ ] Get it review and approve in App Store.\n- [ ] Monetize it?")</code></pre>
     </div>
     <div class="section-title"><h3>LLM Response:</h3></div>
     <div class="llm-response">
@@ -101,13 +91,7 @@
     <div class="section-title"><h3>LLM Action:</h3></div>
     <div class="llm-action">
         <pre><code class="language-python">read_file(path = "todo.md")</code></pre>
-        <pre><code class="language-python">update_file(filename = "todo.md", content = "- [x] Build a landing page.
-- [x] Add support and privacy pages.
-- [x] Create some demos screenshots.
-- [ ] Create some Reddit posts for gym.
-- [ ] Give it out for free.
-- [ ] Get it review and approve in App Store.
-- [x] Monetize it?")</code></pre>
+        <pre><code class="language-python">update_file(filename = "todo.md", content = "- [x] Build a landing page.\n- [x] Add support and privacy pages.\n- [x] Create some demos screenshots.\n- [ ] Create some Reddit posts for gym.\n- [ ] Give it out for free.\n- [ ] Get it review and approve in App Store.\n- [x] Monetize it?")</code></pre>
         <pre><code class="language-python">read_file(path = "todo.md")</code></pre>
     </div>
     <div class="section-title"><h3>LLM Response:</h3></div>
